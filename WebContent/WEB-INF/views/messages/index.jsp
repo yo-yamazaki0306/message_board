@@ -8,15 +8,15 @@
         <ul>
             <c:forEach var ="message" items="${messages}">
                 <li>
-                    <a href="${pageContxt.request.contextPath}/show?id=${message.id}">
+                    <a href="${pageContext.request.contextPath}/show?id=${message.id}">
                         <c:out value="${message.id}"/>
                     </a>
-                ：<c:out value="${message.title}"></c:out>>&gt;<c:out value="${message.content }"/>
+                ：<c:out value="${message.title}"></c:out>&gt;<c:out value="${message.content }"/>
                 </li>
             </c:forEach>
         </ul>
 
-        <p><a href="${pageContext.request.contextPath}/new">新規メッセージの投稿</a><p>
+        <p><a href="${pageContext.request.contextPath}/new">新規メッセージの投稿</a></p>
 
     </c:param>
 </c:import>
